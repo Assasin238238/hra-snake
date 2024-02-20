@@ -1,6 +1,6 @@
 # hra - Snake
 
-Použité technologie: (HTML, CSS, PHP, JS)
+Použité technologie: (HTML, CSS, JS)
 
 K pohybu, vyzualizaci, a k samotné funkčnosti programu
 
