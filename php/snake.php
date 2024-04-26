@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <title>Snake Game</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/snakeStyle.css" />
     <script src="../scripts/script.js" defer></script>
   </head>
   <body>
