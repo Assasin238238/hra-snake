@@ -9,7 +9,7 @@ body {
 
 body,
 .snake {
-  background-color: #075830;
+  background-color: #1b2838;
 }
 
 #game-board {
@@ -76,7 +76,7 @@ body,
 }
 
 .snake {
-  border: #075830 1px dotted;
+  border: #1b2838 1px dotted;
 }
 
 .food {
