@@ -2,6 +2,7 @@
 
 Použité technologie: (HTML, CSS, JS, PHP)
 
-K pohybu, vyzualizaci, a k samotné funkčnosti programu
+Jednotlivé jazyky byly použity k vizualizaci stránky, správné funkčnosti a optimalizaci, a na samotné použití.
 
-V této hře je cílem sbírat jablka při, kterém se bude zvětšovat had do délky. Pokud had narazí do bariéri nebo narazí do sebe, hra skončí.
+
+Samotným úkolem ve hře "Snake" je sbírat jablka, při kterém se bude zvětšovat had do délky. Pokud had narazí do bariéri/hranice mapy, nebo narazí do sebe, hra skončí.
