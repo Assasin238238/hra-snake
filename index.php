@@ -34,7 +34,7 @@
     </div>
     <div class="section">
         <h2>About Snake Game</h2>
-        <p>This is a simple snake game website.</p>
+        <p>A simple snake game website.</p>
         <h2>Play Snake</h2>
         <a href="php/snake.php" class="play-btn">Play</a>
     </div>
