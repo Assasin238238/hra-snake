@@ -39,7 +39,7 @@
                 pointer-events: auto;
             }
         </style>
-    <title>Snake Style</title>
+    <title>Snake Game</title>
 </head>
 <body>
     <header>
@@ -95,6 +95,15 @@
 
             
         }
+
+        let docTitle = document.title;
+        window.addEventListener("blur", ()=>{
+            document.title = "Come back! :(";
+        })
+
+        window.addEventListener("focus", ()=>{
+            document.title = docTitle;
+        })
     </script>
     <footer>
         &copy; 2024; Assasin238. All rights reserved.
