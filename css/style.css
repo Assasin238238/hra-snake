@@ -80,7 +80,7 @@ header{
     scale: 0.95;
 }
 
-/* footer*/
+/* footer */
 
 footer {
     background-color: transparent;
@@ -92,7 +92,7 @@ footer {
     width: 100%;
 }
 
-/* Dropdown menu*/
+/* Dropdown menu */
 
 .dropdown_menu{
     display: none;
@@ -126,7 +126,7 @@ footer {
     justify-content: center;
 }
 
-/* uvod*/
+/* uvod */
 
 section#uvod{
     height: calc(100vh - 60px);
@@ -143,7 +143,7 @@ section#uvod{
     margin-bottom: 1rem;
 }
 
-/* Responsive design*/
+/* Responsive design */
 
 @media(max-width: 992px){
     .navbar .links,

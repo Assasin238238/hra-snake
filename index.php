@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- Skript pro zobrazení 3D modelu -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.5/build/spline-viewer.js"></script>
+    <!-- iconka -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -20,12 +21,12 @@
         <style>
             /* Styly pro kontejner s 3D modelem */
             .model-container {
-                display: flex; /* Skryje 3D model, dokud není stisknuto tlačítko Play */
-                position: relative; /* Relativní pozice pro umístění kurzoru */
-                width: calc(60% - 20%); /* 60% šířka mínus 20% pro levý a pravý okraj */
-                height: 450px; /* Určete výšku podle vašich potřeb */
-                margin: 0 auto; /* Zarovnání do středu */
-                pointer-events: none; /* Zabraňuje průchodu událostí myši k modelu */
+                display: flex; 
+                position: relative; 
+                width: calc(60% - 20%); 
+                height: 450px; 
+                margin: 0 auto; 
+                pointer-events: none; 
             }
     
             /* Styly pro 3D model */
