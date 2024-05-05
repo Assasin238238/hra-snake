@@ -1,57 +1,102 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assasin238</title>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
+    />
     <link rel="stylesheet" href="css/style.css">
     <!-- Skript pro zobrazení 3D modelu -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.5/build/spline-viewer.js"></script>
-
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <link rel="manifest" href="/site.webmanifest">
-
-    <style>
-        /* Styly pro kontejner s 3D modelem */
-        .model-container {
-            position: relative; /* Relativní pozice pro umístění kurzoru */
-            width: calc(60% - 20%); /* 60% šířka mínus 20% pro levý a pravý okraj */
-            height: 450px; /* Určete výšku podle vašich potřeb */
-            margin: 0 auto; /* Zarovnání do středu */
-            pointer-events: none; /* Zabraňuje průchodu událostí myši k modelu */
-        }
-
-        /* Styly pro 3D model */
-        spline-viewer {
-            position: absolute; 
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: auto;
-        }
-    </style>
+        <style>
+            /* Styly pro kontejner s 3D modelem */
+            .model-container {
+                display: flex; /* Skryje 3D model, dokud není stisknuto tlačítko Play */
+                position: relative; /* Relativní pozice pro umístění kurzoru */
+                width: calc(60% - 20%); /* 60% šířka mínus 20% pro levý a pravý okraj */
+                height: 450px; /* Určete výšku podle vašich potřeb */
+                margin: 0 auto; /* Zarovnání do středu */
+                pointer-events: none; /* Zabraňuje průchodu událostí myši k modelu */
+            }
+    
+            /* Styly pro 3D model */
+            spline-viewer {
+                position: absolute; 
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: auto;
+            }
+        </style>
+    <title>Snake Style</title>
 </head>
 <body>
-    <div class="header">
-        <h1>Snake Game</h1>
-    </div>
-    <div class="section">
-        <h2>About Snake Game</h2>
-        <p>A simple snake game website.</p>
-        <h2>Play Snake</h2>
-        <a href="php/snake.php" class="play-btn">Play</a>
-    </div>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#" title="Přejít na hlavní stránku">Snake Game</a></div>
+            <ul class="links">
+                <li><a href="uvod">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="contact">Contact</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get Started</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="dropdown_menu">
+            <li><a href="uvod">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="#" class="action_btn">Get Started</a></li>
+        </div>
+    </header>
+
+    <main>
+        <section id="uvod">
+            <h1>Welcome</h1>
+            <p>This is a simple website for a small game called Snake.</p>
+            <a href="php/snake.php" class="action_btn">Play</a>
+            <!-- Kontejner pro zobrazení 3D modelu -->
+            <div class="model-container">
+                <spline-viewer url="https://prod.spline.design/NsKiIbP5SJNdPS2G/scene.splinecode"></spline-viewer>
+            </div>
+        </section>
+    </main>
     
-    <!-- Kontejner pro zobrazení 3D modelu -->
-    <div class="model-container">
-        <spline-viewer url="https://prod.spline.design/NsKiIbP5SJNdPS2G/scene.splinecode"></spline-viewer>
-    </div>
-    
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        const modelContainer = document.querySelector('.model-container')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+
+            
+        }
+    </script>
     <footer>
-        &copy; 2024; Assasin238. Všechna práva vyhrazena.
+        &copy; 2024; Assasin238. All rights reserved.
     </footer>
 </body>
 </html>
