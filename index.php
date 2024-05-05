@@ -44,7 +44,7 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#" title="Přejít na hlavní stránku">Snake Game</a></div>
+            <div class="logo"><a href="index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
             <ul class="links">
                 <li><a href="uvod">Home</a></li>
                 <li><a href="about">About</a></li>
