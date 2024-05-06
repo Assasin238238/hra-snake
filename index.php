@@ -106,7 +106,7 @@
         })
     </script>
     <footer>
-        &copy; 2024 Copyright all right reserver | Developed by Assasin238
+        &copy; 2024 Copyright all right reserved | Developed by Assasin238
     </footer>
 </body>
 </html>
