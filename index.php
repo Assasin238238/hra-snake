@@ -44,25 +44,25 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
+            <div class="logo"><a href="#" title="Přejít na hlavní stránku">Snake Game</a></div>
             <ul class="links">
-                <li><a href="uvod">Home</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-            <a href="#" class="action_btn">Get Started</a>
+            <a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="uvod">Home</a></li>
-            <li><a href="about">About</a></li>
-            <li><a href="services">Services</a></li>
-            <li><a href="contact">Contact</a></li>
-            <li><a href="#" class="action_btn">Get Started</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a></li>
         </div>
     </header>
 
@@ -70,7 +70,7 @@
         <section id="uvod">
             <h1>Welcome</h1>
             <p>This is a simple website for a small game called Snake.</p>
-            <a href="php/snake.php" class="action_btn">Play</a>
+            <a href="php/snake.php" class="action_btn" id="playBTN">Play</a>
             <!-- Kontejner pro zobrazení 3D modelu -->
             <div class="model-container">
                 <spline-viewer url="https://prod.spline.design/NsKiIbP5SJNdPS2G/scene.splinecode"></spline-viewer>
