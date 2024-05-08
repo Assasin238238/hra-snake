@@ -15,10 +15,10 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.5/build/spline-viewer.js"></script>
     <!-- iconka -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <style>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
             /* Styly pro kontejner s 3D modelem */
             .model-container {
                 display: flex; 
@@ -38,7 +38,7 @@
                 height: 100%;
                 pointer-events: auto;
             }
-        </style>
+    </style>
     <title>Snake Game</title>
 </head>
 <body>
@@ -47,7 +47,7 @@
             <div class="logo"><a href="#" title="Přejít na hlavní stránku">Snake Game</a></div>
             <ul class="links">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.php">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
@@ -59,7 +59,7 @@
 
         <div class="dropdown_menu">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.php">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a></li>
