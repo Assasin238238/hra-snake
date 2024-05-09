@@ -1,16 +1,103 @@
+/* Contact Page */
+
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
-body{
+
+
+.contact-container{
     height: 100vh;
-    background-color: #000;
-    background-image: url('https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg');
-    background-size: cover;
-    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+
+}
+
+.contact-left-title h2{
+    font-weight: 600;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500px;
+    color: #666;
+    border-radius: 50px;
+}
+
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.contact-inputs:focus{
+    border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+
+}
+
+.contact-left button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
+}
+
+.contact-left button img{
+    height: 15px;
+
+}
+
+/* Skip Image NN fuj */
+.contact-right img{
+    width: 500px;
+}
+
+@media (max-width:800px){
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
 }
 
 li{
@@ -19,7 +106,7 @@ li{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-size: 1rem;
 }
 
@@ -27,6 +114,7 @@ a:hover{
     color: green;
 }
 /* Header */
+
 header{
     position: relative;
     padding: 0 2rem;
@@ -80,18 +168,6 @@ header{
     scale: 0.95;
 }
 
-/* footer */
-
-footer {
-    background-color: transparent;
-    color: #ccc;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 /* Dropdown menu */
 
 .dropdown_menu{
@@ -126,23 +202,6 @@ footer {
     justify-content: center;
 }
 
-/* uvod */
-
-section#uvod{
-    height: calc(100vh - 60px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-}
-
-#uvod h1{
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
 /* Responsive design */
 
 @media(max-width: 992px){
@@ -168,11 +227,3 @@ section#uvod{
     }
 
 }
-
-
-#playBTN {
-    margin-top: 50px;
-    width: 90px;
-    height: 30px;
-    
-    }
