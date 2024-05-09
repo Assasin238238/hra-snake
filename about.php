@@ -11,13 +11,8 @@
     referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="css/style.css">
-    <!-- Skript pro zobrazení 3D modelu -->
-    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.5/build/spline-viewer.js"></script>
     <!-- iconka -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
     <title>About - Snake Game</title>
 </head>
 <body>
@@ -28,7 +23,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a>
             <div class="toggle_btn">
@@ -40,7 +35,7 @@
             <li><a href="index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a></li>
         </div>
     </header>
