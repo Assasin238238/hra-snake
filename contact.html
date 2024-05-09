@@ -39,11 +39,46 @@
                 <h2>Get in touch</h2>
                 <hr>
             </div>
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <textarea name="" id="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
         </form>
         <div class="contact-right">
 
         </div>
     </div>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+        const modelContainer = document.querySelector('.model-container')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+
+            
+        }
+        /* Leaving website :( */
+        let docTitle = document.title;
+        window.addEventListener("blur", ()=>{
+            document.title = "Never gonna give you up! :)";
+        })
+
+        window.addEventListener("focus", ()=>{
+            document.title = docTitle;
+        })
+    </script>
+
+    <footer>
+        &copy; 2024 Copyright all right reserved | Developed by Assasin238
+    </footer>
     
 </body>
 </html>
