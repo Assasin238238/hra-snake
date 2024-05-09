@@ -4,8 +4,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    height: 100vh;
+    background-color: #000;
+    background-image: url('https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 
 .contact-container{
@@ -36,7 +44,7 @@
     border: none;
     width: 120px;
     height: 5px;
-    background-color: #a363aa;
+    background-color: #046572;
     border-radius: 10px;
     margin-bottom: 20px;
 }
@@ -77,7 +85,7 @@
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    background: linear-gradient(270deg, #18b9ce, #025725);
     cursor: pointer;
 }
 
@@ -106,7 +114,7 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 1rem;
 }
 
@@ -226,4 +234,16 @@ header{
         width: unset;
     }
 
+}
+
+/* footer */
+
+footer {
+    background-color: transparent;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
