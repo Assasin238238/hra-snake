@@ -94,11 +94,6 @@ body{
 
 }
 
-/* Skip Image NN fuj */
-.contact-right img{
-    width: 500px;
-}
-
 @media (max-width:800px){
     .contact-inputs{
         width: 80vw;
