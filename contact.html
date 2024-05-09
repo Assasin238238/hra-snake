@@ -34,16 +34,21 @@
 
 
     <div class="contact-container">
-        <form action="" class="contact-left">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
                 <h2>Get in touch</h2>
                 <hr>
             </div>
+            <input type="hidden" name="access_key" value="e5846e73-9871-477a-97c9-106ac7743d75">
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
-            <textarea name="" id="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <!-- hCaptcha Spam Protection -->
+            <div class="h-captcha" data-captcha="true"></div>
             <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
         </form>
+        <!-- Required for hCaptcha -->
+        <script src="https://web3forms.com/client/script.js" async defer></script>
         <div class="contact-right">
 
         </div>
