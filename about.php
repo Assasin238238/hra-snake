@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="css/style.css">
     <!-- iconka -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
     <title>About - Snake Game</title>
 </head>
 <body>

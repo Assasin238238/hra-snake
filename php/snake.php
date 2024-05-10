@@ -11,6 +11,8 @@
     />
     <title>Snake Game</title>
     <link rel="stylesheet" href="../css/snakeStyle.css" />
+    <!-- iconka -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="../scripts/script.js" defer></script>
   </head>
   <body>
