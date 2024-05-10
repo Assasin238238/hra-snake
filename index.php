@@ -45,7 +45,7 @@
             <ul class="links">
                 <li><a href="#">Home</a></li>
                 <li><a href="about.php">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="services.html">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a>
@@ -57,7 +57,7 @@
         <div class="dropdown_menu">
             <li><a href="#">Home</a></li>
             <li><a href="about.php">About</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a></li>
         </div>
