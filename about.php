@@ -74,8 +74,6 @@
             document.title = docTitle;
         })
     </script>
-    <footer>
-        &copy; 2024 Copyright all right reserved | Developed by Assasin238
-    </footer>
+    <?php include "php/footer.php" ?>
 </body>
 </html>
