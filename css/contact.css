@@ -151,7 +151,7 @@ header{
 }
 
 .action_btn{
-    background-color: green;
+    background-color: rgb(69, 71, 69);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;

@@ -62,7 +62,7 @@ header{
 }
 
 .action_btn{
-    background-color: green;
+    background-color: rgb(69, 71, 69);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -176,5 +176,6 @@ section#uvod{
     margin-top: 50px;
     width: 90px;
     height: 30px;
+    background-color: green;
     
     }

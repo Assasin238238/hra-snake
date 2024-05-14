@@ -26,7 +26,7 @@
                 <li><a href="services.php">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a>
+            <a href="#" class="action_btn">Privacy</a>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -37,7 +37,7 @@
             <li><a href="about.php">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Get Started</a></li>
+            <li><a href="#" class="action_btn">Privacy</a></li>
         </div>
     </header>
     <div class="container">
@@ -80,6 +80,7 @@
         </div>
     </div>
     <script>
+        /* Menu */
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropDownMenu = document.querySelector('.dropdown_menu')

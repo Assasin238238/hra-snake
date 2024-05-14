@@ -36,7 +36,7 @@
         </div>
       </div>
     </div>
-    <h1 id="instruction-text">Mezerník pro start.</h1>
+    <h1 id="instruction-text">Press space to start.</h1>
     
   </body>
 </html>

@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
@@ -11,6 +11,20 @@ body{
     background-image: url('https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg');
     background-size: cover;
     background-position: center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: green;
 }
 
 .heading{
@@ -63,17 +77,18 @@ body{
     flex: 1;
     margin-right: 40px;
     overflow: hidden;
+    max-width: 100%; /* Přizpůsobení šířce rodičovského kontejneru */
 }
 
 .about-image img{
-    max-width: 100;
+    max-width: 100%; /* Přizpůsobení šířce rodičovského kontejneru */
     height: auto;
-    display: block;
+    display: static;
     transition: 0.5s ease;
 }
 
-.about-content:hover img{
-    transform: scale(1.2);
+.about-image img:hover {
+    transform: scale(1.03);
 }
 .about-content{
     flex: 1;
@@ -82,31 +97,38 @@ body{
 .about-content h2{
     font-size: 23px;
     margin-bottom: 15px;
-    color: #333;
+    color: #000;
 }
 
 .about-content p{
     font-size: 18px;
     line-height: 1.5;
-    color: #666;
-}
-
-.about-content .read-more{
-    display: inline-block;
-    padding: 10px 20px;
     color: #fff;
-    font-size: 19px;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 15px;
-    transition: 0.3s ease;
 }
 
-.about-content .read-more:hover{
-    background-color: #3e8e41;
+.action_btn{
+    background-color: rgb(69, 71, 69);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.action_btn:hover{
+    scale: 1.05;
+    color: #fff;
 }
 
-@media screen and (max-width:768px){
+.action_btn:active{
+    scale: 0.95;
+}
+
+
+@media screen and (max-width:992px){
     .heading{
         padding: 0px 20px;
     }
@@ -132,8 +154,111 @@ body{
         padding: 0px;
         font-size: 16px;
     }
-    .about-content .read-more{
-        font-size: 16px;
+}    
+
+/* Header */
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .links{
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* Dropdown menu */
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open{
+    height: 240px;
+
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive design */
+
+@media(max-width: 992px){
+    .navbar .links,
+    .navbar .action_btn{
+        display: none;
     }
-    
+
+    .navbar .toggle_btn{
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+
+}
+
+/* footer */
+
+footer {
+    background-color: transparent;
+    color: #ccc;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
