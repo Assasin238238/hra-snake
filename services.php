@@ -48,38 +48,32 @@
                     <div class="card">
                         <i class="fa-brands fa-chromecast"></i>
                         <h2>Business Stratagy</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error dicta eum 
-                            at qui nobis dolores delectus nesciunt maiores enim.</p>   
+                         <p>Crafting strategic plans tailored to your goals with market analysis and innovative approaches.</p>   
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-layer-group"></i>
                         <h2>WebSite Development</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error dicta eum 
-                            at qui nobis dolores delectus nesciunt maiores enim.</p>   
+                         <p>Building stunning, responsive websites for captivating user experiences.</p>   
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-user-group"></i>
                         <h2>Marketing And Reporting</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error dicta eum 
-                            at qui nobis dolores delectus nesciunt maiores enim.</p>   
+                         <p>Developing targeted campaigns with comprehensive analytics for maximum impact.</p>   
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-desktop"></i>
                         <h2>Mobile Development</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error dicta eum 
-                            at qui nobis dolores delectus nesciunt maiores enim.</p>   
+                         <p>Creating custom mobile apps for seamless user experiences on any platform.</p>   
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-camera"></i>
                         <h2>Graphic Design</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error dicta eum 
-                            at qui nobis dolores delectus nesciunt maiores enim.</p>   
+                         <p>Transforming ideas into compelling visuals that leave a lasting impression.</p>   
                     </div>
                     <div class="card">
                         <i class="fa-solid fa-gear"></i>
                         <h2>Other</h2>
-                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi error dicta eum 
-                            at qui nobis dolores delectus nesciunt maiores enim.</p>   
+                         <p>Providing tailored solutions for diverse business needs.</p>   
                     </div>
                 </div>
             </div>
