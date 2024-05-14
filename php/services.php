@@ -11,7 +11,7 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
     />
-    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="../css/services.css">
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -19,12 +19,12 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
+            <div class="logo"><a href="../index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
             <ul class="links">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="../index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../contact.html">Contact</a></li>
             </ul>
             <a href="#" class="action_btn">Privacy</a>
             <div class="toggle_btn">
@@ -33,10 +33,10 @@
         </div>
 
         <div class="dropdown_menu">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../contact.html">Contact</a></li>
             <li><a href="#" class="action_btn">Privacy</a></li>
         </div>
     </header>
@@ -106,7 +106,7 @@
             document.title = docTitle;
         })
     </script>
-    <?php include "php/footer.php" ?>
+    <?php include "footer.php" ?>
     
 </body>
 </html>

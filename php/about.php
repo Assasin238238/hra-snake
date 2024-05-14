@@ -11,18 +11,18 @@
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" 
     />
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="../css/about.css">
     <!-- iconka -->
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
 </head>
 <header>
     <div class="navbar">
-        <div class="logo"><a href="index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
+        <div class="logo"><a href="../index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
         <ul class="links">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="services.php">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="../contact.html">Contact</a></li>
         </ul>
         <a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Privacy</a>
         <div class="toggle_btn">
@@ -31,10 +31,10 @@
     </div>
 
     <div class="dropdown_menu">
-        <li><a href="index.php">Home</a></li>
+        <li><a href="../index.php">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="services.php">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="../contact.html">Contact</a></li>
         <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Privacy</a></li>
     </div>
 </header>
@@ -46,7 +46,7 @@
     <div class="container">
         <section class="about">
             <div class="about-image">
-            <img src="assets/gameplay.png" alt="" id="gameplay-image">
+            <img src="../assets/gameplay.png" alt="" id="gameplay-image">
             </div>
             <div class="about-content">
                 <h2>Rekindle the Classic Fun</h2>
@@ -85,6 +85,6 @@
     window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran", "_blank");
 });
     </script>
-    <?php include "php/footer.php" ?>  
+    <?php include "footer.php" ?>  
 </body>
 </html>

@@ -44,8 +44,8 @@
             <div class="logo"><a href="#" title="Přejít na hlavní stránku">Snake Game</a></div>
             <ul class="links">
                 <li><a href="#">Home</a></li>
-                <li><a href="about.php">About</a></li>
-                <li><a href="services.php">Services</a></li>
+                <li><a href="php/about.php">About</a></li>
+                <li><a href="php/services.php">Services</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <a href="#" class="action_btn">Privacy</a>
@@ -56,8 +56,8 @@
 
         <div class="dropdown_menu">
             <li><a href="#">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="services.php">Services</a></li>
+            <li><a href="php/about.php">About</a></li>
+            <li><a href="php/services.php">Services</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="#" class="action_btn">Privacy</a></li>
         </div>
