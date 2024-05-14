@@ -1,3 +1,3 @@
 <footer>
-&copy; 2024; Assasin238. Všechna práva vyhrazena.
+&copy; 2024 Copyright all right reserved | Developed by Assasin238
 </footer> 

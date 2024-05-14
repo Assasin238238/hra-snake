@@ -82,7 +82,7 @@
         })
         /* Hidden Button - png */
         document.getElementById("gameplay-image").addEventListener("click", function() {
-    window.open("https://youtu.be/iXDnFYu91vY?t=22", "_blank");
+    window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran", "_blank");
 });
     </script>
     <?php include "php/footer.php" ?>  
