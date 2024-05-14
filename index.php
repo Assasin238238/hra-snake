@@ -96,7 +96,7 @@
         /* Leaving website :( */
         let docTitle = document.title;
         window.addEventListener("blur", ()=>{
-            document.title = "Never gonna give you up! :)";
+            document.title = "Come back!";
         })
 
         window.addEventListener("focus", ()=>{
