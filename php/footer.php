@@ -1,7 +1,3 @@
 <footer>
 &copy; 2024 Copyright all right reserved | Developed by Assasin238
 </footer> 
-
-<footer1>
-&copy; 2024 Copyright all right reserved | Developed by Assasin238 | Support by Martin Skočdopole
-</footer1> 
