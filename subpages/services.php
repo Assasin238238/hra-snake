@@ -24,7 +24,7 @@
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
-                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
             <a href="#" class="action_btn">Privacy</a>
             <div class="toggle_btn">
@@ -36,7 +36,7 @@
             <li><a href="../index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="#" class="action_btn">Privacy</a></li>
         </div>
     </header>
@@ -106,7 +106,7 @@
             document.title = docTitle;
         })
     </script>
-    <?php include "footer.php" ?>
+    <?php include "../php/footer.php" ?>
     
 </body>
 </html>

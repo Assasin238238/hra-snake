@@ -44,9 +44,9 @@
             <div class="logo"><a href="#" title="Přejít na hlavní stránku">Snake Game</a></div>
             <ul class="links">
                 <li><a href="#">Home</a></li>
-                <li><a href="php/about.php">About</a></li>
-                <li><a href="php/services.php">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="subpages/about.php">About</a></li>
+                <li><a href="subpages/services.php">Services</a></li>
+                <li><a href="subpages/contact.html">Contact</a></li>
             </ul>
             <a href="#" class="action_btn">Privacy</a>
             <div class="toggle_btn">
@@ -56,9 +56,9 @@
 
         <div class="dropdown_menu">
             <li><a href="#">Home</a></li>
-            <li><a href="php/about.php">About</a></li>
-            <li><a href="php/services.php">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="subpages/about.php">About</a></li>
+            <li><a href="subpages/services.php">Services</a></li>
+            <li><a href="subpages/contact.html">Contact</a></li>
             <li><a href="#" class="action_btn">Privacy</a></li>
         </div>
     </header>
@@ -67,7 +67,7 @@
         <section id="uvod">
             <h1>Welcome</h1>
             <p>This is a simple website for a small game called Snake.</p>
-            <a href="php/snake.php" class="action_btn" id="playBTN">Play</a>
+            <a href="subpages/snake.php" class="action_btn" id="playBTN">Play</a>
             <!-- Kontejner pro zobrazení 3D modelu -->
             <div class="model-container">
                 <spline-viewer url="https://prod.spline.design/NsKiIbP5SJNdPS2G/scene.splinecode"></spline-viewer>

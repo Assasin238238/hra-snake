@@ -22,7 +22,7 @@
             <li><a href="../index.php">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="services.php">Services</a></li>
-            <li><a href="../contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
         <a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Privacy</a>
         <div class="toggle_btn">
@@ -34,7 +34,7 @@
         <li><a href="../index.php">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="services.php">Services</a></li>
-        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="https://youtu.be/iXDnFYu91vY?t=22" class="action_btn">Privacy</a></li>
     </div>
 </header>
@@ -85,6 +85,6 @@
     window.open("https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran", "_blank");
 });
     </script>
-    <?php include "footer.php" ?>  
+    <?php include "../php/footer.php" ?>  
 </body>
 </html>
