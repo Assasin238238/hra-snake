@@ -42,6 +42,6 @@
       </div>
     </div>
     <h1 id="instruction-text">Press space to start.</h1>
-    
+    <?php include "../php/footer.php" ?>
   </body>
 </html>
