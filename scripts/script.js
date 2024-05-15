@@ -1,7 +1,6 @@
 // Define HTML elements
 const board = document.getElementById('game-board');
 const instructionText = document.getElementById('instruction-text');
-
 const score = document.getElementById('score');
 const highScoreText = document.getElementById('highScore');
 
@@ -100,7 +99,6 @@ function move() {
   }
 }
 
-
 // Start game function
 function startGame() {
   gameStarted = true; // Keep track of a running game
@@ -186,7 +184,6 @@ function stopGame() {
   clearInterval(gameInterval);
   gameStarted = false;
   instructionText.style.display = 'block';
-  
 }
 
 function updateHighScore() {
@@ -197,3 +194,13 @@ function updateHighScore() {
   }
   highScoreText.style.display = 'block';
 }
+
+/* Leaving website :( */
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+  document.title = "Come back!";
+});
+
+window.addEventListener("focus", () => {
+  document.title = docTitle;
+});

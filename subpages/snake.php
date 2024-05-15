@@ -23,6 +23,11 @@
     <script src="../scripts/script.js" defer></script>
   </head>
   <body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="../index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
+        </div>
+    </header>
     <div>
       <div class="scores">
         <h1 id="score">000</h1> 
