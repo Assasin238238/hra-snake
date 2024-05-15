@@ -58,9 +58,14 @@ function drawFood() {
 
 // Generate food
 function generateFood() {
-  const x = Math.floor(Math.random() * gridSize) + 1;
-  const y = Math.floor(Math.random() * gridSize) + 1;
-  return { x, y };
+  let newFood;
+  do {
+    newFood = {
+      x: Math.floor(Math.random() * gridSize) + 1,
+      y: Math.floor(Math.random() * gridSize) + 1
+    };
+  } while (snake.some(segment => segment.x === newFood.x && segment.y === newFood.y));
+  return newFood;
 }
 
 // Moving the snake
@@ -83,8 +88,14 @@ function move() {
 
   snake.unshift(head);
 
-  //   snake.pop();
+  // Check if the player has reached length 50
+  if (snake.length - 1 === 50) {
+    // Play the music
+    const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.play();
+  }
 
+  // Check if the head collides with food
   if (head.x === food.x && head.y === food.y) {
     food = generateFood();
     increaseSpeed();
@@ -95,8 +106,21 @@ function move() {
       draw();
     }, gameSpeedDelay);
   } else {
+    // Check if the player died
+    if (checkDeath(head)) {
+      // Stop the music
+      const backgroundMusic = document.getElementById('background-music');
+      backgroundMusic.pause();
+      backgroundMusic.currentTime = 0; // Rewind the music to the beginning
+    }
     snake.pop();
   }
+}
+
+// Function to check if the player died
+function checkDeath(head) {
+  // Check if the head is out of bounds or collides with the snake body
+  return head.x < 1 || head.x > gridSize || head.y < 1 || head.y > gridSize || snake.slice(1).some(segment => segment.x === head.x && segment.y === head.y);
 }
 
 // Start game function

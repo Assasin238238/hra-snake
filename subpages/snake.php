@@ -21,6 +21,7 @@
     <!-- iconka -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="../scripts/script.js" defer></script>
+    <audio id="background-music" src="../assets/the-only-thing-they-fear-is-you-doom-eternal-made-with-Voicemod.mp3" loop></audio>
   </head>
   <body>
     <header>
@@ -42,6 +43,6 @@
       </div>
     </div>
     <h1 id="instruction-text">Press space to start.</h1>
-    <?php include "../php/footer.php" ?>
+    <?php include "../php/footerSnake.php" ?>
   </body>
 </html>
