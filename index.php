@@ -11,6 +11,7 @@
     referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/web.js" defer></script>
     <!-- Skript pro zobrazení 3D modelu -->
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.5/build/spline-viewer.js"></script>
     <!-- iconka -->
@@ -74,35 +75,6 @@
             </div>
         </section>
     </main>
-    
-
-    <script>
-        /* Menu */
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-        const modelContainer = document.querySelector('.model-container')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-
-            
-        }
-        /* Leaving website :( */
-        let docTitle = document.title;
-        window.addEventListener("blur", ()=>{
-            document.title = "Come back!";
-        })
-
-        window.addEventListener("focus", ()=>{
-            document.title = docTitle;
-        })
-    </script>
     <?php include "php/footer.php" ?>
     <!-- <footer>
         &copy; 2024 Copyright all right reserved | Developed by Assasin238

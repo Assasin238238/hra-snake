@@ -12,6 +12,7 @@
     referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="../css/services.css">
+    <script src="../scripts/web.js" defer></script>
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -79,33 +80,6 @@
             </div>
         </div>
     </div>
-    <script>
-        /* Menu */
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-        const modelContainer = document.querySelector('.model-container')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-
-            
-        }
-        /* Leaving website :( */
-        let docTitle = document.title;
-        window.addEventListener("blur", ()=>{
-            document.title = "Come back!";
-        })
-
-        window.addEventListener("focus", ()=>{
-            document.title = docTitle;
-        })
-    </script>
     <?php include "../php/footer.php" ?>
     
 </body>
