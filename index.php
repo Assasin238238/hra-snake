@@ -16,27 +16,6 @@
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.2.5/build/spline-viewer.js"></script>
     <!-- iconka -->
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <style>
-            /* Styly pro kontejner s 3D modelem */
-            .model-container {
-                display: flex; 
-                position: relative; 
-                width: calc(60% - 20%); 
-                height: 450px; 
-                margin: 0 auto; 
-                pointer-events: none; 
-            }
-    
-            /* Styly pro 3D model */
-            spline-viewer {
-                position: absolute; 
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                pointer-events: auto;
-            }
-    </style>
     <title>Snake Game</title>
 </head>
 <body>
