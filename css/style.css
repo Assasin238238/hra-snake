@@ -1,11 +1,13 @@
-*{
+/* Reset basic styles and set the default font */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-body{
+/* Styling for the body of the page */
+body {
     height: 100vh;
     background-color: #000;
     background-image: url('https://wallpapers.com/images/hd/mountain-aesthetic-3pbvwsg3h7ksq2li.jpg');
@@ -13,28 +15,30 @@ body{
     background-position: center;
 }
 
-li{
+/* Remove bullets from list items */
+li {
     list-style: none;
 }
 
-a{
+/* Styling for links */
+a {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
 
-a:hover{
+a:hover {
     color: green;
 }
 
-/* Header */
-
-header{
+/* Header styling */
+header {
     position: relative;
     padding: 0 2rem;
 }
 
-.navbar{
+/* Styling for the navigation bar */
+.navbar {
     width: 100%;
     height: 60px;
     max-width: 1200px;
@@ -44,24 +48,28 @@ header{
     justify-content: space-between;
 }
 
-.navbar .logo a{
+/* Styling for the logo in the navigation bar */
+.navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.navbar .links{
+/* Styling for the links in the navigation bar */
+.navbar .links {
     display: flex;
     gap: 2rem;
 }
 
-.navbar .toggle_btn{
+/* Styling for the toggle button in the mobile version */
+.navbar .toggle_btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 
-.action_btn{
+/* Styling for the action button */
+.action_btn {
     background-color: rgb(69, 71, 69);
     color: #fff;
     padding: 0.5rem 1rem;
@@ -71,19 +79,19 @@ header{
     font-size: 0.8rem;
     font-weight: bold;
     cursor: pointer;
-    transition: scale 0.2 ease;
+    transition: scale 0.2s ease;
 }
-.action_btn:hover{
+
+.action_btn:hover {
     scale: 1.05;
     color: #fff;
 }
 
-.action_btn:active{
+.action_btn:active {
     scale: 0.95;
 }
 
-/* footer */
-
+/* Footer styling */
 footer {
     background-color: transparent;
     color: #ccc;
@@ -94,9 +102,8 @@ footer {
     width: 100%;
 }
 
-/* Dropdown menu */
-
-.dropdown_menu{
+/* Dropdown menu styling */
+.dropdown_menu {
     display: none;
     position: absolute;
     right: 2rem;
@@ -107,30 +114,30 @@ footer {
     backdrop-filter: blur(15px);
     border-radius: 10px;
     overflow: hidden;
-    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu.open{
+.dropdown_menu.open {
     height: 240px;
-
 }
 
-.dropdown_menu li{
+/* Styling for list items in the dropdown menu */
+.dropdown_menu li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.dropdown_menu .action_btn{
+/* Styling for the action button in the dropdown menu */
+.dropdown_menu .action_btn {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-/* uvod */
-
-section#uvod{
+/* Styling for the introduction section */
+section#uvod {
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -140,59 +147,57 @@ section#uvod{
     color: #fff;
 }
 
-#uvod h1{
+/* Styling for the heading in the introduction section */
+#uvod h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-/* Responsive design */
-
-@media(max-width: 992px){
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 992px) {
     .navbar .links,
-    .navbar .action_btn{
+    .navbar .action_btn {
         display: none;
     }
 
-    .navbar .toggle_btn{
+    .navbar .toggle_btn {
         display: block;
     }
 
     .dropdown_menu {
         display: block;
-
     }
 }
 
+/* Responsive design for mobile devices */
 @media (max-width: 576px) {
-    .dropdown_menu{
+    .dropdown_menu {
         left: 2rem;
         width: unset;
     }
-
 }
 
-
+/* Styling for the play button */
 #playBTN {
     margin-top: 50px;
     width: 90px;
     height: 30px;
     background-color: green;
-    
-    }
-
-/* Styly pro kontejner s 3D modelem */
-.model-container {
-    display: flex; 
-    position: relative; 
-    width: calc(60% - 20%); 
-    height: 450px; 
-    margin: 0 auto; 
-    pointer-events: none; 
 }
 
-/* Styly pro 3D model */
+/* Styles for the container with the 3D model */
+.model-container {
+    display: flex;
+    position: relative;
+    width: calc(60% - 20%);
+    height: 450px;
+    margin: 0 auto;
+    pointer-events: none;
+}
+
+/* Styles for the 3D model */
 spline-viewer {
-    position: absolute; 
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;

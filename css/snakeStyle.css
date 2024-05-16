@@ -1,9 +1,11 @@
-*{
+/* Reset basic styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styling for the body of the page */
 body {
   display: flex;
   align-items: center;
@@ -11,26 +13,31 @@ body {
   height: 100vh;
   margin: 0;
   font-family: 'VT323', monospace;
-  position: relative; /* Přidáno */
+  position: relative; /* Added for positioning elements absolutely within the body */
 }
 
-a{
+/* Styling for links */
+a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
 }
 
-a:hover{
+a:hover {
   color: green;
 }
 
+/* Snake styling */
 .snake {
   background-color: #0c8b1d;
 }
+
+/* Background color for the body */
 body {
   background-color: #376479;
 }
 
+/* Styling for the game board */
 #game-board {
   border-radius: 100px;
   display: grid;
@@ -39,6 +46,7 @@ body {
   margin: 5px;
 }
 
+/* Different border styles for the game board */
 .game-border-1 {
   border: #8df8c1 solid 10px;
   border-radius: 30px;
@@ -51,12 +59,16 @@ body {
   box-shadow: inset 0 0 0 10px #71dda5;
 }
 
-
 .game-border-3 {
   border: #4BD68E solid 30px;
   border-radius: 20px;
-  
 }
+
+.game-border-3 {
+  background-color: #c4cfa3;
+}
+
+/* Styling for the instruction text */
 #instruction-text {
   position: absolute;
   top: 60%;
@@ -68,11 +80,13 @@ body {
   margin: 0;
 }
 
+/* Styling for the scores display */
 .scores {
   display: flex;
   justify-content: space-between;
 }
 
+/* Styling for the score text */
 #score {
   color: #abb78a;
 }
@@ -84,54 +98,52 @@ body {
   margin: 10px 0;
 }
 
+/* Styling for the high score text */
 #highScore {
   color: #d8ddca;
   display: none;
 }
 
-.game-border-3
-{
-  background-color: #c4cfa3;
-}
-
+/* Styling for the snake */
 .snake {
   border: #1b2838 1px dotted;
 }
 
+/* Styling for the food */
 .food {
   background-color: #e20e0e;
   border: #e20e0e 5px solid;
 }
 
-/* Header */
-
+/* Header styling */
 header {
   text-align: center;
   justify-content: center;
-  position:absolute;
+  position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 1000; /* Záhlaví má vyšší z-index než herní pole */
+  z-index: 1000; /* Header has a higher z-index than the game board */
   padding: 0 2rem;
 }
 
-.navbar{
-    width: 100%;
-    height: 60px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+/* Styling for the navigation bar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar .logo a{
-    font-size: 3rem;
-    font-weight: bold;
+/* Styling for the logo in the navigation bar */
+.navbar .logo a {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-/* footer */
-
+/* Footer styling */
 footer {
   background-color: transparent;
   color: #ccc;
@@ -142,25 +154,26 @@ footer {
   width: 100%;
 }
 
-/* Responsive design */
+/* Responsive design for mobile devices */
 @media (max-width: 576px) {
-  .dropdown_menu{
-      left: 2rem;
-      width: unset;
+  .dropdown_menu {
+    left: 2rem;
+    width: unset;
   }
-
 }
 
-li{
+/* Remove bullets from list items */
+li {
   list-style: none;
 }
 
-a{
+/* Styling for links (repeated styles to ensure they are applied) */
+a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
 }
 
-a:hover{
+a:hover {
   color: green;
 }

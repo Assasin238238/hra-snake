@@ -4,35 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Snake Game</title>
-    <!-- Must implement for side bar - first link section  -->
+
+    <!-- Font Awesome for icons -->
     <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
     />
-    <!-- iconka -->
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+
+    <!-- Custom CSS for the contact page -->
     <link rel="stylesheet" href="../css/contact.css">
+
+    <!-- External JavaScript file -->
     <script src="../scripts/web.js" defer></script>
 </head>
 <body>
     <header>
         <div class="navbar">
+            <!-- Logo and link to the main page -->
             <div class="logo"><a href="../index.php" title="Přejít na hlavní stránku">Snake Game</a></div>
+            
+            <!-- Navigation links -->
             <ul class="links">
                 <li><a href="../index.php">Home</a></li>
                 <li><a href="about.php">About</a></li>
                 <li><a href="services.php">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            
+            <!-- Privacy link -->
             <a href="#" class="action_btn">Privacy</a>
+            
+            <!-- Toggle button for mobile navigation -->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
         </div>
 
+        <!-- Dropdown menu for mobile view -->
         <div class="dropdown_menu">
             <li><a href="../index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
@@ -42,31 +56,39 @@
         </div>
     </header>
 
-
-
+    <!-- Main content container for the contact form -->
     <div class="contact-container">
+        <!-- Contact form using Web3Forms API for submission -->
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
                 <h2>Get in touch</h2>
                 <hr>
             </div>
+            
+            <!-- Hidden input for Web3Forms access key -->
             <input type="hidden" name="access_key" value="e5846e73-9871-477a-97c9-106ac7743d75">
+            
+            <!-- User input fields -->
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
-            <!-- hCaptcha Spam Protection -->
+            
+            <!-- hCaptcha for spam protection -->
             <div class="h-captcha" data-captcha="true"></div>
+            
+            <!-- Submit button with an arrow icon -->
             <button type="submit">Submit <img src="assets/arrow_icon.png" alt=""></button>
         </form>
-        <!-- Required for hCaptcha -->
+        
+        <!-- Required script for hCaptcha -->
         <script src="https://web3forms.com/client/script.js" async defer></script>
-        <div class="contact-right">
 
-        </div>
+        <!-- Empty right side for potential additional content or styling purposes -->
+        <div class="contact-right"></div>
     </div>
+    
     <footer>
         &copy; 2024 Copyright all right reserved | Developed by Assasin238
     </footer>
-    
 </body>
 </html>
