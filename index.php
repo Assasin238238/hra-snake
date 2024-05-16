@@ -33,7 +33,7 @@
                 <li><a href="subpages/contact.html">Contact</a></li>
             </ul>
             <!-- Privacy action button -->
-            <a href="#" class="action_btn">Privacy</a>
+            <a href="https://www.termsfeed.com/live/519680c5-025e-460d-9063-7ef1e846f1f5" class="action_btn">Privacy</a>
             <!-- Toggle button for responsive menu -->
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
@@ -46,7 +46,7 @@
             <li><a href="subpages/about.php">About</a></li>
             <li><a href="subpages/services.php">Services</a></li>
             <li><a href="subpages/contact.html">Contact</a></li>
-            <li><a href="#" class="action_btn">Privacy</a></li>
+            <li><a href="https://www.termsfeed.com/live/519680c5-025e-460d-9063-7ef1e846f1f5" class="action_btn">Privacy</a></li>
         </div>
     </header>
 
