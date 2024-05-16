@@ -36,7 +36,7 @@
     <script src="../scripts/script.js" defer></script>
     
     <!-- Background music for the game -->
-    <audio id="background-music" src="../assets/the-only-thing-they-fear-is-you-doom-eternal-made-with-Voicemod.mp3" loop></audio>
+    <audio id="background-music" src="../assets/s.mp3" loop></audio>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NNECHHWH7V"></script>
 <script>
