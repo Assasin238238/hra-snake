@@ -1,5 +1,3 @@
-/* Version 1.0 */
-
 // Define HTML elements
 const board = document.getElementById('game-board');
 const instructionText = document.getElementById('instruction-text');
@@ -47,9 +45,6 @@ function setPosition(element, position) {
   element.style.gridRow = position.y;
 }
 
-// Testing draw function
-// draw();
-
 // Draw food function
 function drawFood() {
   if (gameStarted) {
@@ -74,7 +69,10 @@ function generateFood() {
 // Moving the snake
 function move() {
   if (directionQueue.length > 0) {
-    direction = directionQueue.shift();
+    const newDirection = directionQueue.shift();
+    if (!isOppositeDirection(newDirection)) {
+      direction = newDirection;
+    }
   }
 
   const head = { ...snake[0] };
@@ -144,37 +142,51 @@ function startGame() {
 
 // Keypress event listener
 function handleKeyPress(event) {
-  if (
-    (!gameStarted && event.code === 'Space') ||
-    (!gameStarted && event.key === ' ')
-  ) {
+  if (!gameStarted) {
     startGame();
   } else {
     let newDirection;
     switch (event.key) {
       case 'ArrowUp':
-        if (direction !== 'down') newDirection = 'up';
+      case 'w':
+      case 'W':
+        newDirection = 'up';
         break;
       case 'ArrowDown':
-        if (direction !== 'up') newDirection = 'down';
+      case 's':
+      case 'S':
+        newDirection = 'down';
         break;
       case 'ArrowLeft':
-        if (direction !== 'right') newDirection = 'left';
+      case 'a':
+      case 'A':
+        newDirection = 'left';
         break;
       case 'ArrowRight':
-        if (direction !== 'left') newDirection = 'right';
+      case 'd':
+      case 'D':
+        newDirection = 'right';
         break;
     }
-    if (newDirection && newDirection !== directionQueue[directionQueue.length - 1]) {
+    if (newDirection && !isOppositeDirection(newDirection)) {
       directionQueue.push(newDirection);
     }
   }
 }
 
+function isOppositeDirection(newDirection) {
+  const oppositeDirections = {
+    'up': 'down',
+    'down': 'up',
+    'left': 'right',
+    'right': 'left'
+  };
+  return oppositeDirections[direction] === newDirection;
+}
+
 document.addEventListener('keydown', handleKeyPress);
 
 function increaseSpeed() {
-  //   console.log(gameSpeedDelay);
   if (gameSpeedDelay > 150) {
     gameSpeedDelay -= 5;
   } else if (gameSpeedDelay > 100) {

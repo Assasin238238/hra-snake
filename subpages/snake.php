@@ -74,7 +74,7 @@
     </div>
     
     <!-- Instruction text displayed before the game starts -->
-    <h1 id="instruction-text">Press space to start.</h1>
+    <h1 id="instruction-text">Press Any Key to start.</h1>
     
     <!-- Include footer content from a separate PHP file -->
     <?php include "../php/footerSnake.php" ?>
