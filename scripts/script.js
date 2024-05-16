@@ -10,6 +10,7 @@ let snake = [{ x: 10, y: 10 }];
 let food = generateFood();
 let highScore = 0;
 let direction = 'right';
+let directionQueue = [];
 let gameInterval;
 let gameSpeedDelay = 200;
 let gameStarted = false;
@@ -70,6 +71,10 @@ function generateFood() {
 
 // Moving the snake
 function move() {
+  if (directionQueue.length > 0) {
+    direction = directionQueue.shift();
+  }
+
   const head = { ...snake[0] };
   switch (direction) {
     case 'up':
@@ -143,19 +148,23 @@ function handleKeyPress(event) {
   ) {
     startGame();
   } else {
+    let newDirection;
     switch (event.key) {
       case 'ArrowUp':
-        direction = 'up';
+        if (direction !== 'down') newDirection = 'up';
         break;
       case 'ArrowDown':
-        direction = 'down';
+        if (direction !== 'up') newDirection = 'down';
         break;
       case 'ArrowLeft':
-        direction = 'left';
+        if (direction !== 'right') newDirection = 'left';
         break;
       case 'ArrowRight':
-        direction = 'right';
+        if (direction !== 'left') newDirection = 'right';
         break;
+    }
+    if (newDirection && newDirection !== directionQueue[directionQueue.length - 1]) {
+      directionQueue.push(newDirection);
     }
   }
 }
@@ -195,6 +204,7 @@ function resetGame() {
   snake = [{ x: 10, y: 10 }];
   food = generateFood();
   direction = 'right';
+  directionQueue = [];
   gameSpeedDelay = 200;
   updateScore();
 }
