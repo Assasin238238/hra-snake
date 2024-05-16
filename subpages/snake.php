@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Version 1.0 -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
@@ -36,6 +37,15 @@
     
     <!-- Background music for the game -->
     <audio id="background-music" src="../assets/the-only-thing-they-fear-is-you-doom-eternal-made-with-Voicemod.mp3" loop></audio>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NNECHHWH7V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NNECHHWH7V');
+</script>
 </head>
 <body>
     <header>

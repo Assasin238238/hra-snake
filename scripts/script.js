@@ -1,3 +1,5 @@
+/* Version 1.0 */
+
 // Define HTML elements
 const board = document.getElementById('game-board');
 const instructionText = document.getElementById('instruction-text');
