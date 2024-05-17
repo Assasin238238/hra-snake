@@ -94,9 +94,10 @@ function move() {
   snake.unshift(head);
 
   // Check if the player has reached length 50
-  if (snake.length - 1 === 50) {
+  if (snake.length - 1 === 2) {
     // Play the music
     const backgroundMusic = document.getElementById('background-music');
+    backgroundMusic.volume = 0.5; // Set volume to 50%
     backgroundMusic.play();
   }
 
