@@ -97,7 +97,7 @@ function move() {
   if (snake.length - 1 === 50) {
     // Play the music
     const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.volume = 0.5; // Set volume to 50%
+    backgroundMusic.volume = 0.4; // Set volume to 50%
     backgroundMusic.play();
   }
 
