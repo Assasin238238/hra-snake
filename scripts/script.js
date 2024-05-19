@@ -1,8 +1,55 @@
-// Define HTML elements
 const board = document.getElementById('game-board');
 const instructionText = document.getElementById('instruction-text');
 const score = document.getElementById('score');
 const highScoreText = document.getElementById('highScore');
+
+// Volume bar element
+const volumeBar = document.getElementById('volume-bar');
+const backgroundMusic = document.getElementById('background-music');
+
+// Initial volume setting
+let volume = 0.4;
+const initialFilledSquares = Math.floor(volume * 10);
+
+// Create volume squares
+for (let i = 0; i < 10; i++) {
+    const square = document.createElement('div');
+    square.className = 'volume-square';
+    if (i < initialFilledSquares) {
+        square.classList.add('filled');
+    }
+    square.addEventListener('click', () => adjustVolume(i));
+    volumeBar.appendChild(square);
+}
+
+// Adjust volume based on clicked square
+function adjustVolume(index) {
+    volume = (index + 1) / 10;
+    if (volume === 0.1) {
+        backgroundMusic.volume = 0;
+    } else {
+        backgroundMusic.volume = volume;
+    }
+    updateVolumeBar(index + 1);
+}
+
+// Update volume bar visual
+function updateVolumeBar(filledSquares) {
+    const squares = document.querySelectorAll('.volume-square');
+    squares.forEach((square, index) => {
+        square.classList.remove('max-volume', 'min-volume');
+        if (index < filledSquares) {
+            square.classList.add('filled');
+        } else {
+            square.classList.remove('filled');
+        }
+    });
+    if (filledSquares === 10) {
+        squares[9].classList.add('max-volume');
+    } else if (filledSquares === 1) {
+        squares[0].classList.add('min-volume');
+    }
+}
 
 // Define game variables
 const gridSize = 20;
@@ -93,11 +140,10 @@ function move() {
 
   snake.unshift(head);
 
-  // Check if the player has reached length 50
-  if (snake.length - 1 === 50) {
+  // Check if the player has reached length 2
+  if (snake.length - 1 === 2) {
     // Play the music
-    const backgroundMusic = document.getElementById('background-music');
-    backgroundMusic.volume = 0.4; // Set volume to 50%
+    backgroundMusic.volume = volume; // Set volume based on volume bar
     backgroundMusic.play();
   }
 
@@ -115,7 +161,6 @@ function move() {
     // Check if the player died
     if (checkDeath(head)) {
       // Stop the music
-      const backgroundMusic = document.getElementById('background-music');
       backgroundMusic.pause();
       backgroundMusic.currentTime = 0; // Rewind the music to the beginning
     }

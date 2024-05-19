@@ -76,6 +76,11 @@
     <!-- Instruction text displayed before the game starts -->
     <h1 id="instruction-text">Press Any Key to start.</h1>
     
+    <!-- Volume bar container -->
+    <div class="volume-bar-container">
+        <div id="volume-bar"></div>
+    </div>
+    
     <!-- Include footer content from a separate PHP file -->
     <?php include "../php/footerSnake.php" ?>
 </body>
