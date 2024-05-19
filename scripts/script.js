@@ -141,7 +141,7 @@ function move() {
   snake.unshift(head);
 
   // Check if the player has reached length 2
-  if (snake.length - 1 === 2) {
+  if (snake.length - 1 === 50) {
     // Play the music
     backgroundMusic.volume = volume; // Set volume based on volume bar
     backgroundMusic.play();
