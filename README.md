@@ -1,5 +1,7 @@
 # hra - Snake
 
+url: http://swa-snake-game.rf.gd/
+
 Použité technologie: (HTML, CSS, JS, PHP)
 
 Jednotlivé jazyky byly použity k vizualizaci stránky, správné funkčnosti a optimalizaci, a na samotné použití.
